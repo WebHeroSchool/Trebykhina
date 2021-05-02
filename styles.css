@@ -1,12 +1,57 @@
-h1 {font-family: Roboto;}
-body {margin: 0; border: dashed 1px red;}
-.header { margin: auto; border: dashed 1px red;}
-.header {display: flex; justify-content: space-between;}
-.main-section { margin: auto; border: dashed 1px red; margin-top: 60px;}
-.wrapper {margin: auto; width: 80%; border: dashed 1px red;}
-.logo, .menu {display: inline-block; border: dashed 1px red;}
-.logo {margin-right: 63%;}
-.logo {padding: 40px 0;}
-.menu {display: flex; align-items: center;}
-.menu__item {padding: 0 13px; border: dashed 1px red;}
-.menu__item:last-child {padding-right: 0;}
+.main-content__title {
+  font-family: Roboto;
+}
+
+body {
+  margin: 0;
+  border: dashed 0px;
+}
+
+.header {
+  margin: auto;
+  border: dashed 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-section {
+  margin: auto;
+  border: dashed 0px;
+  margin-top: 60px;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+  border: dashed 0px;
+}
+
+.logo, .menu {
+  display: inline-block;
+  border: dashed 0px;
+}
+
+.logo {
+  margin-right: 63%;
+}
+
+.logo {
+  padding: 40px 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 0 13px;
+  border: dashed 0px;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
