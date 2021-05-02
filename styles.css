@@ -2,7 +2,7 @@ h1 {font-family: Roboto;}
 body {margin: 0; border: dashed 1px red;}
 .header { margin: auto; width: 80%; border: dashed 1px red;}
 .header {display: flex; justify-content: space-between;}
-.main-section { margin: auto; width: 75%; border: dashed 1px red;}
+.main-section { margin: auto; width: 80%; border: dashed 1px red;}
 .wrapper {margin: auto; width: 80%; border: dashed 1px red;}
 .logo, .menu {display: inline-block; border: dashed 1px red;}
 .logo {margin-right: 63%;}
