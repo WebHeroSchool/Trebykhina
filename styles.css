@@ -25,7 +25,7 @@ body {
 .logo {
   width: 190px;
   height: 35px;
-  border: dashed 1px red;
+  border: dashed 0px;
   background: url('img/logo.svg');
 }
 
@@ -36,7 +36,6 @@ body {
 
 .menu__item {
   padding: 0 13px;
-  font: 500 18px/21px Roboto, arial, helvetica, sans-serif
   border: dashed 0px;
 }
 
