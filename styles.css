@@ -1,1 +1,103 @@
-h1 {font-family: Roboto;}
+body {
+  margin: 0;
+  border: dashed 0px;
+}
+
+.header {
+  margin: auto;
+  border: dashed 0px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+  border: dashed 0px;
+}
+
+.logo, .menu {
+  display: inline-block;
+  border: dashed 0px;
+}
+
+.logo {
+  width: 190px;
+  height: 35px;
+  border: dashed 0px;
+  background: url('img/logo.svg');
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  position: relative;
+  margin-right: 26px;
+  font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+  color: #000000;
+  text-decoration: none;
+  transition: opacity .5s;
+  border: dashed 0px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item_active::after {
+  position: absolute;
+  display: block;
+  content:'';
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .5s, width .5s;
+}
+
+.menu__item:hover {
+  opacity: 0.5;
+}
+
+.menu__item:hover:after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+}
+
+.menu__item:hover:after, .menu__item_active:after {
+  opacity: 1;
+  width: 100%;
+}
+
+.main-section {
+  margin: auto;
+  border: dashed 0px;
+  margin-top: 60px;
+}
+
+.main-content__title {
+  font-family: PT serif;
+  font-size: 66px;
+}
+
+.main-content__subtitle, .main-content__button {
+  font-family: Roboto;
+}
+
+.main-content__subtitle {
+  font-size: 22px;
+}
+
+.main-content__button {
+  font-size: 18px;
+}
