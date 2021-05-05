@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-  margin: auto;
+  margin-bottom: 100px;
   border: dashed 0px;
   padding: 40px 0;
   display: flex;
@@ -79,25 +79,58 @@ body {
   width: 100%;
 }
 
-.main-section {
-  margin: auto;
+.main {
+  padding: 0 63% 100px 0;
+  background: top right no-repeat url(img/mainImg.svg);
   border: dashed 0px;
-  margin-top: 60px;
 }
 
-.main-content__title {
+.main__title {
+  margin: 0 0 40px 0;
   font-family: PT serif;
   font-size: 66px;
 }
 
-.main-content__subtitle, .main-content__button {
+.main__title-text_highlight {
+  background: #ECF3FF;
+}
+
+.main__subtitle, .main__button {
   font-family: Roboto;
 }
 
-.main-content__subtitle {
+.main__subtitle {
+  margin: 0 0 41px 0;
   font-size: 22px;
 }
 
-.main-content__button {
-  font-size: 18px;
+.main__button {
+ display: inline-block;
+ font: 14px/16px Roboto, arial, helvetica, sans-serif;
+ color: #fff;
+ background: #0056EC;
+ padding: 14px 16px;
+ text-decoration: none;
+ transition: opacity .5s;
+ -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
+
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+
+.main__button:hover {
+ opacity: .5;
 }
